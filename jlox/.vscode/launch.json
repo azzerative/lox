@@ -10,6 +10,13 @@
             "request": "launch",
             "mainClass": "com.github.azzerative.lox.Lox",
             "args": "test.lox"
+        },
+        {
+            "type": "java",
+            "name": "generate_ast",
+            "request": "launch",
+            "mainClass": "com.github.azzerative.tool.GenerateAst",
+            "args": "src/com/github/azzerative/lox"
         }
     ]
 }
