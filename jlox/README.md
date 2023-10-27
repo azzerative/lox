@@ -1,18 +1,37 @@
-## Getting Started
+# Java Lox Interpreter (jlox)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Prerequisites
 
-## Folder Structure
+- JDK 11 (tested on OpenJDK 11)
+- GNU Make
 
-The workspace contains two folders by default, where:
+## Build
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Build the Java classes from source by running make.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+```sh
+$ make
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Usage
 
-## Dependency Management
+### REPL
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Run the Lox REPL directly.
+
+```sh
+$ ./jlox.sh # or ./jlox.bat
+>
+```
+
+### File
+
+If you have a Lox file you wish to process, provide its path as an argument:
+
+```sh
+# input.lox
+# print "Hello, world!";
+
+$ ./jlox.sh input.lox # or ./jlox.bat input.lox
+Hello, world!
+```
