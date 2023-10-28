@@ -11,3 +11,4 @@ AllowShortBlocksOnASingleLine: Empty
 AllowShortFunctionsOnASingleLine: Empty
 PointerAlignment: Left
 AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortCaseLabelsOnASingleLine: true
