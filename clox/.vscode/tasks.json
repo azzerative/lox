@@ -2,14 +2,14 @@
   "tasks": [
     {
       "type": "cppbuild",
-      "label": "C/C++: gcc.exe build active file",
-      "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+      "label": "build clox",
+      "command": "gcc.exe",
       "args": [
         "-fdiagnostics-color=always",
         "-g",
         "${workspaceFolder}\\*.c",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        "${workspaceFolder}\\clox.exe"
       ],
       "options": {
         "cwd": "${fileDirname}"
